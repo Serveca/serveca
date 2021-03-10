@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".searchFrag">
+
+
+    <ProgressBar
+        android:id="@+id/search_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/loading"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loginform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Services"
+            android:iconifiedByDefault="false"
+            app:iconifiedByDefault="false"
+
+
+            ></SearchView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Plumbing"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/plumbing" />
+
+                <ImageButton
+                    android:id="@+id/Automatic"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_automobilemachenic" />
+
+                <ImageButton
+                    android:id="@+id/ACRepair"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_air_conditioner" />
+
+                <ImageButton
+                    android:id="@+id/Electronic"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_washing_machine" />
+
+                <ImageButton
+                    android:id="@+id/Taxi"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_taxi" />
+
+                <ImageButton
+                    android:id="@+id/Driver"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_taxi_driver" />
+
+                <ImageButton
+                    android:id="@+id/Tutor"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_teacher" />
+
+                <ImageButton
+                    android:id="@+id/HouseKeeping"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_housekeeper" />
+
+                <ImageButton
+                    android:id="@+id/Stove"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_gas" />
+
+                <ImageButton
+                    android:id="@+id/MobileRepair"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_mobile" />
+
+                <ImageButton
+                    android:id="@+id/Decoration"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_decoration" />
+
+                <ImageButton
+                    android:id="@+id/WeddingPlanner"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_weddingplanner" />
+
+                <ImageButton
+                    android:id="@+id/Catering"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_catering" />
+
+                <ImageButton
+                    android:id="@+id/Photographer"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_photographer" />
+
+                <ImageButton
+                    android:id="@+id/waterTank"
+                    android:layout_width="67dp"
+                    android:layout_height="75dp"
+
+
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/service"
+                    app:srcCompat="@drawable/ic_water_tank" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/lvprovider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

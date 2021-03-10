@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="service">
+        <item> </item>
+        <item>AC Repair</item>
+        <item>Automobile Mechanic</item>
+        <item>Plumbing</item>
+        <item>Electronic Repair</item>
+        <item>Mobile Repair</item>
+        <item>Driving</item>
+        <item>Transport</item>
+        <item>Cab</item>
+        <item>Stove Repair</item>
+        <item>Wedding Planner</item>
+        <item>House Keeping</item>
+        <item>Water Tank Cleaner</item>
+        <item>Tutor</item>
+        <item>Photographer</item>
+        <item>Catering</item>
+        <item>Decoration</item>
+         <item>Other</item>
+    </string-array>
+</resources>

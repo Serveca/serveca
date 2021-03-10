@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Login">
+
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Loding...please...wait.."
+        android:textColor="#F4F4F4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#393E46"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_gravity="center_horizontal|fill"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:background="#5000ca"
+            android:src="@mipmap/logo"
+            app:srcCompat="@mipmap/logo_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="431dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="0sp"
+            android:background="@null"
+            android:baseline="0sp"
+            app:srcCompat="@drawable/ic_wave" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:text="user Account"
+                android:textColor="#1E1F22"
+                app:backgroundTint="@color/button" />
+
+            <Button
+                android:id="@+id/btnbuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:text="Business account"
+                android:textColor="#0C0C0C"
+                app:backgroundTint="@color/button" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etname"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint=" Enter full name"
+                    android:inputType="textPersonName"
+                    android:textColor="#EDE8E8"
+                    android:textColorHint="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/etMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter Email id"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#EDE8E8"
+                    android:textColorHint="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter Mobile no."
+                    android:inputType="phone"
+                    android:textColor="#EDE8E8"
+                    android:textColorHint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tvspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Service provided (must be filled)"
+                    android:textColor="#FFC107"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/etspinner"
+                    android:layout_width="231dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:animateLayoutChanges="true"
+                    android:clickable="true"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/etFirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:hint="Enter name of firm (optional)"
+                    android:inputType="textPersonName"
+                    android:textColor="#EDE8E8"
+                    android:textColorHint="#FFFFFF" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#393E46"
+                    android:textColorHint="#F4F4F4"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#F4F4F4">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#393E46"
+                        android:ems="10"
+                        android:hint="Create Password"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#393E46"
+                    android:textColorHint="#F4F4F4"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#F4F4F4">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etrepass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#393E46"
+                        android:ems="10"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttons"
+                    android:text="submit"
+                    app:backgroundTint="@null" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
